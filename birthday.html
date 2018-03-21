@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>С днём рождения, Саша!</title>
+  <link rel="stylesheet" href="files/style.css">
+
+  <script type="text/javascript">
+    // Скрипт для блока "Поздравь"
+    var congratulations = [
+      'Отличного здоровья!',
+      'Вечной любви!',
+      'Приятных соседей!',
+      'Отвязных выходных!',
+      'Исполнения мечты!',
+      'Страстной ночи с девушкой мечты!',
+      'Вечера с лучшим другом!',
+      'Кучи денег тебе!'
+    ];
+
+    function congratulateAlex() {
+      var congrats = prompt('Что хочешь пожелать Саше?');
+      var random = Math.round(Math.random() * (congratulations.length - 1));
+      if (!congrats) {
+        alert('Эх ты! Ничего не пожелал :)');
+        alert('Ну а я пожелаю. И знаешь чего? ' + congratulations[random] + '\n\nУРААААА!!');
+      } else {
+        alert('Хм... Хитро... А знаешь, что думаю я по этому поводу?');
+        alert('Я думаю что сначала пожелаю я сама. Вот так. И знаешь чего? ' + congratulations[random]);
+        alert('А теперь твоё пожелание!\n\n' + congrats.toUpperCase() + '\n\nУРААААА!!');
+      }
+    }
+  </script>
+</head>
+
+<body> 
+
+<!-- HEADER start -->
+  <div class="page-header">
+    <p class="top-img">  <!-- Можно переделать на span, но поведение меняется, так что пока не было решимости. Когда свой логотип сделаю, скорее всего, переделаю это место. -->
+      <img src="files/logo.png" width="128" height="128" alt="Happy Birthday">
+    </p>
+
+    <h1>С днём рождения, Саша!</h1>
+
+    <div>
+      <div class="links">
+        <a href="#from_me">От меня</a>
+        <a href="#congrats">Поздравлялки</a>
+        <a href="#poetry">Стишок</a>
+        <a href="#postcard">Открытка</a>
+      </div>
+    </div>
+
+    <p class="sic">День рождения — <br>
+      это когда тебе приходит SMS из банка с поздравлениями.</p>
+  </div>
+<!-- HEADER end -->
+
+<!-- CONTENT start -->
+  <div>
+    <h2 class="new_h2">Александру Ракову от Катёнки Феликс</h2>
+    <br>
+
+    <div class="photo">
+      <span>
+        <img src="files/photo3.png" width="21.5%" alt="Happy Birthday">
+        <img src="files/photo.png" width="43%" alt="Happy Birthday">
+        <img src="files/photo2.png" width="33.2%" alt="Happy Birthday">
+      </span>
+    </div>
+    <br>
+
+    <div>
+      <a name="from_me"></a>  <!-- Метка для ссылок -->
+      <h2 class="fat_butt">От меня</h2>
+    </div>
+
+    <br>
+
+    <h3 class="dpan">Дорогой Саша, хочу поздравить тебя с днём рождения!</h3>
+
+    <br>
+    <p class="pp">Во-первых, хочу пожелать тебе <b>огромного счастья и бесконечной любви</b>. Что может быть прекрасней? :) ... Вот и я не знаю такое "что", которое было бы ценнее ... Хочу ещё пожелать тебе <b>верных друзей</b>, добрых и интересных приятелей. <b>Здоровья бесконечного</b>, знаю, что это сложно - но почему бы и не дожить до 100 лет. Ещё хочу, чтобы у тебя всегда <b>был достаток и не было нужды</b> - это во все времена было очень важно.</p>
+
+    <p class="pp">Я не большой мастер на выдумки, но могу сказать о себе. Мне важна свобода и возможность беспрепятственного саморазвития. Чтобы был доступ свободный к интересующей меня информации. Этого тоже тебе желаю. Чтобы никто в этой жизни не посмел ограничивать твою свободу и перпятствовать твоему саморазвитию. Я считаю, что всю жизнь чему-то учишься - и это не плохо, а очень даже хорошо - всегда есть стимул и смысл идти вперёд.</p>
+
+    <p class="pp">А ещё хочу, чтобы ты делал то, что тебе нравится, не откладывал этого на потом. Жизнь не такая уж и бесконечная, наверное :) ... Так что надо спешить! ... Делать то, что хочешь делать не меньше, чем делать то, что должен делать. Давай себе время отдохнуть, делай себе послабления, дари себе подарки, окружай себя людьми что тебя любят и ценят. Пускай жизнь вокруг тебя кипит, бурлит и проливается наружу. Не бойся "показаться" каким-то, делая то, что ты хочешь или что тебе нравится. А если и кто-то решит, что ты неправильный.. Ну а судьи кто? Мир наш позволяет быть неправильным, ибо "правильность" слишком субъективна во многих случаях.</p>
+
+    <p class="pp">Желаю тебе <b>правильно питаться, заниматься спортом и избегать вредных привычек</b>, насколько это возможно. Я за свою коротенькую жизнь уже была за гранями этих явлений жизни - и, насколько я могу судить - всё это: вредная еда, лень, вредные привычки - не приносят счастья. Они такая обманка, мне кажется. Работают только как способ убежать от проблем, но никак не как решение этих проблем.</p>
+
+    <p class="pp">Уже много наговорила, кажется, пора заканчивать :)</p>
+
+    <p class="pp">Надеюсь, что мы наша дружба будет продолжительной и приятной. С тобой у меня было множество приятных разговоров. Желаю тебе решения всех твоих проблем. Серьёзных и не очень. Путешествий тебе желаю дальних и не очень. Мыслей тебе желаю - умных и не очень %) - умные мысли иногда навевают скуку, а глупые бывают такими весёлыми, что аж вах!</p>
+
+    <p class="pp">Добра тебе, радости, солнышка тёплого по утрам, дождиков мягких осенью, цветов ярких весной, листвы зелёной летом, бесконечной снежной дали зимой, камина согревающего во время холодных вечеров, фильмов интересных в редкие скучненькие ночки, плодотворной увлекательной работы, отвязных весёлых выходных, красивых спутниц повсюду, вежливых официантов и умелых шофёров тебе :))</p>
+
+    <h3 class="welcome" style="margin-left: 20px;">Рубрика: "поздравь Сашу"!</h3>
+
+    <p class="pp">Ну и как не пожелать что-нибудь самому себе? %) ... Да и всё равно я там запасла ещё массивчик поздравлялок и пожелалок, так что нажимай кнопку и желай себе всего, чего жахочешь! Ахах</p>
+
+    <div class="but">  <!-- Кнопка для поздравления -->
+      <p style="text-align: center; margin: 35px 0 75px 0px;"><input class="button" type="submit" name="btn" value="ПОЗДРАВИТЬ !!!" onclick="congratulateAlex()"></p>
+    </div>
+
+    <div>
+      <a name="congrats"></a>
+      <h2 class="fat_butt">Поздравлялки</h2>
+    </div>
+
+    <!-- TEMP placeholders -->
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <br>
+
+    <p style="text-align: center;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jqYxyd1iSNk?rel=0&amp;showinfo=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    </p>
+    <br>
+
+    <p style="text-align: center;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Tr2bN1leItM?rel=0&amp;showinfo=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    </p>
+    <br>
+
+    <div>
+      <a name="poetry"></a>
+      <h2 class="fat_butt">Стишок</h2>
+    </div>
+
+    <!-- TEMP placeholders -->
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <br>
+
+    <!--
+    Очень важная штука, над которой ломалась голова пол дня, решилась одним свойством для родительского объекта:
+      white-space: nowrap;
+
+    А именно - две склеенные картинки для создания эффекта трёхмерности с разными индексами z-index (нога и тело ^^) ведут себя как текст, в следствие этого свойства, ну а избавление в основной картинке от лишнего минусового марджина позволило ей жить без скроллинга на широком экране до масштаба в 200%.
+
+    Следующая цель - убрать для неё скроллинг, чтобы просто скрывалась за границами невзезающая часть.
+
+    UPD: собственно, проблема решилась за 2 минуты, применением к body вчерашнего свойства:
+      overflow-x:hidden;
+    -->
+
+    <p class="baby">
+      <a name="postcard"></a> <!-- Метка перенесена, чтобы захватить девушку-->
+      <span class="invis">
+        <img src="files/wiki-1.png" alt="Pretty girl">
+      </span>
+      <span class="vis">
+        <img src="files/wiki.png" alt="Pretty girl">
+      </span>
+    </p>
+    <div><h2 class="fat_butt div-invis"></h2></div>  <!-- Вспомогательная панелька для девушки -->
+
+    <div>
+      <h2 class="fat_butt div-vis">Открытка</h2>
+    </div>
+
+    <!-- TEMP placeholders -->
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+
+    <div>
+      <h2 class="fat_butt">30 марта 2018 года</h2>
+    </div>
+    <h3 class="welcome">Этот день в истории</h3>
+    <h3 class="dpan">Праздники:</h3>
+    <ul>
+      <li>
+        <a class="pp" href="http://www.doctorsday.org"><b>США</b> — Национальный день Врача.</a>
+      </li>
+      <li>
+        <a class="pp" href="https://electronicintifada.net/blogs/ali-abunimah/what-palestines-land-day"><b>Палестина</b> — День земли.</a>
+      </li>
+    </ul>
+
+    <h3 class="dpan">Именины:</h3>
+    <ul>
+      <li class="pp">Александр</li>
+      <li class="pp">Алексей</li>
+      <li class="pp">Виктор</li>
+      <li class="pp">Макар</li>
+    </ul>
+    <br>
+  </div>
+<!-- CONTENT end -->
+
+<!-- Старая версия меню
+  <ul class="downlinks">
+    <li><a href="#from_me">От меня</a></li>
+    <li><a href="#congrats">Поздравлялки</a></li>
+    <li><a href="#poetry">Стишок</a></li>
+    <li><a href="#postcard">Открытка</a></li>
+  </ul>
+-->
+
+<!-- FOOTER start -->
+  <div class="page-footer">
+    <p class="bot-img">
+      <img src="files/logo2.png" width="64" height="64" alt="Happy Birhday">
+    </p>
+
+    <div>
+      <div class="downlinks">
+        <a href="#from_me"">От меня</a>
+        <a href="#congrats">Поздравлялки</a>
+        <a href="#poetry">Стишок</a>
+        <a href="#postcard">Открытка</a>
+      </div>
+    </div>
+
+    <span class="developer"><strong>Разработчик:</strong>
+      <a href="https://github.com/katenkafelix">Awesome me</a>
+    </span>
+    <br>
+
+    <p class="logo">
+      <img src="files/rlogo.png" width="27" height="34">
+    </p>
+    <span class="rights">All rights reserved</span>
+    <span class="socials">
+      <a class="social social-vk" href="https://vk.com/katenkafelix"></a>
+      <a class="social social-fb" href="http://www.facebook.com"></a>
+      <a class="social social-tw" href="http://twitter.com"></a>
+    </span>
+  </div>
+<!-- FOOTER end -->
+</body>
+</html>
