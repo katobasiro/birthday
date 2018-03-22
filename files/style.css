@@ -20,6 +20,10 @@ p {
   color: bisque;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .page-header {
   position: relative;
   width: auto;
@@ -87,9 +91,9 @@ p {
   padding-left: 15px;
   border-top: none;
   text-align: left;
-  text-shadow: rgb(246, 131, 31) 0 0 5px;
+  text-shadow: black 0 0 5px;
   font-style: italic;
-  color: black;
+  color: rgba(246, 131, 31, 0.85);
 }
 
 .photo {
@@ -106,16 +110,23 @@ p {
   padding-top: 15px;
   text-align: center;
   font-size: 200%;
-  text-shadow: white 0 0 2px;
+  text-shadow: black 0 0 2px;
 }
 
 .button {
-  background: linear-gradient(to right bottom, rgb(246, 131, 31), purple);
+  background: linear-gradient(to right bottom, rgb(246, 131, 31), brown);
   font-size: 175%;
   padding: 15px;
   font-weight: bold;
   color: bisque;
+  text-shadow: black 0 0 2px;
   border: none;
+}
+
+.white {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: -25px 1px -230px 1px;
+  padding: 20px 0 145px 0;
 }
 
 .div-invis {  /* Вспомогательные панельки для "эффекта ноги". Столько пафоса для одной плюшки, что никто не заметит, ахах. Но мне нравится. */
@@ -143,12 +154,22 @@ p {
   text-align: center;
   font-size: 150%;
   color: bisque;
+  padding: 15px 0;
+  text-shadow: black 0 0 4px;
+}
+
+.board {
+  margin: -45px 2px -25px 2px;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .pp {  /* Возможно, избавлюсь от этого класса. Только ради li его держу. А так у p и так прописан цвет бисквитный. Если что - не забыть в sic изменить размер щрифта. */
+  padding: 5px 10px;
     color: bisque;
     text-decoration: none;
     font-size: 125%;
+  text-shadow: black 0 0 4px;
 }
 
 .vis {
@@ -303,7 +324,6 @@ p {
     text-align: center;
     font-size: 135%;
     color: rgb(246, 131, 31);
-    text-shadow: black 0 0 3px;
   }
   .sic {  /* Вырубаем цитатку */
     display: none;
@@ -320,15 +340,12 @@ p {
     margin-top: 0px;
     background-color: rgba(0, 0, 0, 0.88);
     z-index: 1000;
-    overflow: auto;
   }
   .downlinks a {
     display: inline-block;
     padding: 5px 10px 5px 0;
     text-align: center;
-    font-size: 100%;
-    color: rgb(246, 131, 31);
-    text-shadow: black 0 0 3px;
+    font-size: 125%;
     width: 20%;
   }
 }
@@ -343,6 +360,9 @@ p {
   }
   .vis img {
     margin-left: 40px;
+  }
+  .downlinks a {
+    font-size: 100%;
   }
 }
 
@@ -365,6 +385,10 @@ p {
   iframe {
     height: 250px;
   }
+  .white {
+    margin-bottom: -55px;
+    padding-bottom: 25px;
+}
   .vis img {  /* Вырубаем девушку */
     display: none;
   }
@@ -483,11 +507,17 @@ p {
   .button {
     font-size: 80%;
   }
+  .links a {
+    font-size: 125%;
+  }
 }
 
 
 @media screen and (max-width: 170px) {
   h2 {
+    font-size: 100%;
+  }
+  .links a {
     font-size: 100%;
   }
   .button {
