@@ -88,6 +88,7 @@ p {
   border-top: none;
   text-align: left;
   text-shadow: rgb(246, 131, 31) 0 0 5px;
+  font-style: italic;
   color: black;
 }
 
@@ -163,6 +164,7 @@ p {
   border-top: 1px solid rgb(246, 131, 31);
   border-left: 2px solid rgb(246, 131, 31);
   border-right: 2px solid rgb(246, 131, 31);
+  border-bottom: 2px solid rgb(246, 131, 31);
 }
 
 .rights {
@@ -281,8 +283,9 @@ p {
     background: url(header-image.png) no-repeat 0 25%;    /* Борьба с размером картинки по высоте */
   }
   .page-header h1 {
-    padding-top: 35px;
+    padding-top: 55px;
     font-size: 200%;
+    margin-bottom: -20px;
   }
   .links {  /* Новая менюшка */
     display: block;
@@ -355,6 +358,10 @@ p {
   .page-header h1 {
     font-size: 150%;
   }
+  .new_h2 {
+    padding-left: 0;
+    text-align: center;
+  }
   iframe {
     height: 250px;
   }
@@ -412,7 +419,6 @@ p {
     text-align: center;
   }
   .page-header h1 {
-    font-size: 100%;
     padding-left: 0;
     padding-top: 150px;
     text-align: center;
@@ -467,6 +473,9 @@ p {
 @media screen and (max-width: 220px) {
   h2 {
     font-size: 125%;
+  }
+  .page-header h1 {
+    font-size: 100%;
   }
   .welcome {
     overflow: auto;
