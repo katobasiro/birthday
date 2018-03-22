@@ -177,6 +177,14 @@ a:hover {
   z-index: 2;
 }
 
+.book {
+  position: static;
+  padding-right: 10px;
+  margin-top: -75px;
+  width: 40%;
+  float: right;
+}
+
 .page-footer {
   position: relative;
   width: auto;
@@ -331,6 +339,13 @@ a:hover {
   .invis img {
     width: 20%;
   }
+  .book {
+    display: inline;
+    text-align: center;
+    margin-top: 0;
+    width: 95%;
+    float: auto;
+  }
   .downlinks {  /* Новая менюшка футера */
     display: block;
     top: 0;
@@ -453,6 +468,9 @@ a:hover {
   }
   iframe {
     height: 150px;
+  }
+  .book img {
+    width: 80%;
   }
   .page-footer {
     background: url(footer-image.png) no-repeat 0 40%;
