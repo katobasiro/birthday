@@ -157,7 +157,6 @@ p {
 
 .page-footer {
   position: relative;
-  bottom: -15px;
   width: auto;
   background: url(footer-image.png) no-repeat 0 40%;
   background-size: 100%;
@@ -278,34 +277,19 @@ p {
 
 
 @media screen and (max-width: 720px) {
-  .page-header h1 {
-    font-size: 200%;
-  }
-  .links {
-    margin-top: -120px;
-  }
-  .invis img {
-    width: 20%;
-  }
-  .social {
-    margin-bottom: 20px;
-  }
-}
-
-
-@media screen and (max-width: 640px) {
   .page-header {
     background: url(header-image.png) no-repeat 0 25%;    /* Борьба с размером картинки по высоте */
   }
   .page-header h1 {
     padding-top: 35px;
+    font-size: 200%;
   }
   .links {  /* Новая менюшка */
     display: block;
     top: 0;
     right: 0;
     left: 0;
-    margin-top: 52px;
+    margin-top: 60px;
     background-color: rgba(0, 0, 0, 0.88);
     z-index: 1000;
     overflow: auto;  /* Да будет скролл */
@@ -324,8 +308,25 @@ p {
   .invis img {
     width: 20%;
   }
-  .social {
-    margin-bottom: 20px;
+  .downlinks {  /* Новая менюшка футера */
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.88);
+    z-index: 1000;
+    overflow: auto;
+  }
+  .downlinks a {
+    display: inline-block;
+    padding: 5px 10px 5px 0;
+    text-align: center;
+    font-size: 100%;
+    color: rgb(246, 131, 31);
+    text-shadow: black 0 0 3px;
+    width: 20%;
   }
 }
 
@@ -343,7 +344,7 @@ p {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
   .social {  /* Вырубаем соцсети */
     display: none;
   }
@@ -366,31 +367,22 @@ p {
   .div-vis {
     margin-top: 200px;
   }
+  .downlinks a {
+    width: auto;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .downlinks a {  /* Вертикальное расположение кнопочек менюшки футера */
+    display: block;
+  }
 }
 
 
 @media screen and (max-width: 360px) {
   iframe {
     height: 200px;
-  }
-  .downlinks {  /* Новая менюшка футера */
-    display: block;
-    top: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
-    margin-top: 0px;
-    background-color: rgba(0, 0, 0, 0.88);
-    z-index: 1000;
-    overflow: auto;
-  }
-  .downlinks a {
-    display: inline-block;
-    padding: 5px 10px 5px 0;
-    text-align: center;
-    font-size: 75%;
-    color: rgb(246, 131, 31);
-    text-shadow: black 0 0 3px;
   }
   .rights {
     left: 35px;
@@ -435,21 +427,25 @@ p {
   .page-footer {
     background: url(footer-image.png) no-repeat 0 40%;
   }
-  .downlinks a {  /* Вертикальное расположение кнопочек менюшки футера */
-    display: block;
-  }
 }
 
 
 @media screen and (max-width: 288px) {
+  .page-footer br {
+    padding-bottom: -50px;
+  }
+  .logo {
+    margin: 0px;
+    padding: 0px;
+  }
   .rights {
     left: 30px;
-    bottom: 55px;
+    bottom: 40px;
     font-size: 75%;
   }
   .developer {
     left: 30px;
-    bottom: 35px;
+    bottom: 20px;
   }
 }
 
@@ -457,6 +453,13 @@ p {
 @media screen and (max-width: 260px) {
   .button {
     font-size: 110%;
+  }
+}
+
+
+@media screen and (max-width: 230px) {
+  .bot-img {
+    display: none;
   }
 }
 
@@ -471,9 +474,6 @@ p {
   .button {
     font-size: 80%;
   }
-  .bot-img {
-    display: none;
-  }
 }
 
 
@@ -487,10 +487,10 @@ p {
   }
   .rights {
     font-size: 60%;
-    bottom: 60px;
+    bottom: 43px;
   }
   .developer {
     font-size: 75%;
-    bottom: 36px;
+    bottom: 22px;
   }
 }
