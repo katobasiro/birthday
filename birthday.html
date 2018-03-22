@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="files/style.css">
 
   <script type="text/javascript">
-    // Скрипт для блока "Поздравь"
     var congratulations = [
       'Отличного здоровья!',
       'Вечной любви!',
@@ -39,7 +38,7 @@
 
 <!-- HEADER start -->
   <div class="page-header">
-    <p class="top-img">  <!-- Можно переделать на span, но поведение меняется, так что пока не было решимости. Когда свой логотип сделаю, скорее всего, переделаю это место. -->
+    <p class="top-img">
       <img src="files/logo.png" width="128" height="128" alt="Happy Birthday">
     </p>
 
@@ -74,7 +73,7 @@
     <br>
 
     <div>
-      <a name="from_me"></a>  <!-- Метка для ссылок -->
+      <a name="from_me"></a>
       <h2 class="fat_butt">От меня</h2>
     </div>
 
@@ -134,8 +133,6 @@
       <h2 class="fat_butt">Стишок</h2>
     </div>
 
-    <!-- TEMP placeholders -->
-
     <div class="white">
     <div class="photo">
       <span>
@@ -145,20 +142,8 @@
     </div>
     <br>
 
-    <!--
-    Очень важная штука, над которой ломалась голова пол дня, решилась одним свойством для родительского объекта:
-      white-space: nowrap;
-
-    А именно - две склеенные картинки для создания эффекта трёхмерности с разными индексами z-index (нога и тело ^^) ведут себя как текст, в следствие этого свойства, ну а избавление в основной картинке от лишнего минусового марджина позволило ей жить без скроллинга на широком экране до масштаба в 200%.
-
-    Следующая цель - убрать для неё скроллинг, чтобы просто скрывалась за границами невзезающая часть.
-
-    UPD: собственно, проблема решилась за 2 минуты, применением к body вчерашнего свойства:
-      overflow-x:hidden;
-    -->
-
     <p class="baby">
-      <a name="postcard"></a> <!-- Метка перенесена, чтобы захватить девушку-->
+      <a name="postcard"></a>
       <span class="invis">
         <img src="files/wiki-1.png" alt="Pretty girl">
       </span>
@@ -166,25 +151,16 @@
         <img src="files/wiki.png" alt="Pretty girl">
       </span>
     </p>
-    <div><h2 class="fat_butt div-invis"></h2></div>  <!-- Вспомогательная панелька для девушки -->
+    <div><h2 class="fat_butt div-invis"></h2></div>
 
     <div>
       <h2 class="fat_butt div-vis">Открытка</h2>
     </div>
 
-    <!-- TEMP placeholders -->
-    <p>1</p>
-    <p>1</p>
-    <p>1</p>
-    <p>1</p>
-    <p>1</p>
-    <p>1</p>
-    <p>1</p>
-    <p>1</p>
-    <p>1</p>
-    <p>1</p>
-    <p>1</p>
-    <p>1</p>
+    <div class="card">
+      <img src="files/birthday.png" alt="Books">
+    </div>
+    <br>
 
     <div>
       <h2 class="fat_butt">30 марта 2018 года</h2>
@@ -235,15 +211,6 @@
     </div>
   </div>
 <!-- CONTENT end -->
-
-<!-- Старая версия меню
-  <ul class="downlinks">
-    <li><a href="#from_me">От меня</a></li>
-    <li><a href="#congrats">Поздравлялки</a></li>
-    <li><a href="#poetry">Стишок</a></li>
-    <li><a href="#postcard">Открытка</a></li>
-  </ul>
--->
 
 <!-- FOOTER start -->
   <div class="page-footer">
