@@ -114,13 +114,18 @@ a:hover {
 }
 
 .button {
-  background: linear-gradient(to right bottom, rgb(246, 131, 31), brown);
+  background: linear-gradient(to right bottom, rgb(246, 131, 31), #121127);
+  font-family: "Tahoma", sans-serif;
   font-size: 175%;
   padding: 15px;
   font-weight: bold;
   color: bisque;
-  text-shadow: black 0 0 2px;
   border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  text-shadow: blue 0 0 3px;
+  box-shadow: 0 -5px 10px -3px bisque,
+    0 5px 10px -3px bisque;
 }
 
 .sitting {
